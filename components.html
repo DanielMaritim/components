@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title>Component</title>
+	
+	<script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+	
+    
+</head>
+<body>
+
+
+
+	<div id="one"></div>
+	
+	<script type="text/babel">
+	//components are parts of a website eg buttons,nav bars...etc
+	// you can have many components to make a bigger components
+	// lets create a component called bigger
+	
+	class Bigger extends React.Component{
+      render(){
+        return (<h2>This is a Component</h2>);
+      }
+    } 
+	
+	ReactDOM.render(<Bigger/>,document.getElementById('one'));
+	
+	</script>
+</body>
+
+
+</html>
